@@ -9,13 +9,33 @@
     font-family: "Open Sans", sans-serif;
     font-family: "Work Sans", sans-serif;
 }
-
+.btn {
+    margin-top: 20px;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.p-btn {
+    background: #ff42a5;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+}
+.b-btn {
+    background: #4ec5f7;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+}
 .h-c {
     color: #0b0223;
 }
 .p-c {
     color: #534c64;
 }
+/* shared style end */
 
 /* menu style start */
 nav {
@@ -45,17 +65,17 @@ nav {
 .l-g {
     color: #f948b2;
 }
-nav  ul {
+nav ul {
     display: flex;
 }
 nav li {
     list-style: none;
     margin-right: 20px;
 }
-nav li a{
+nav li a {
     text-decoration: none;
     font-weight: 600;
-    color: #3C354F;
+    color: #3c354f;
 }
 
 .nav-btn {
@@ -68,47 +88,110 @@ nav li a{
 
 /* menu style end */
 
+/*  banner style start */
+.banner-content {
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.banner img {
+    width: 400px;
+}
+.banner-title h1 {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-title h2{
+    font-size: 2rem;
+}
+.banner-title p {
+    color: #534c64;
+    padding: 5px 0;
+}
+
+/*  banner style end */
+
+
+
+
+
 /* ========================= */
+
 /* Mobile devices responsive */
 
 @media screen and (max-width: 425px) {
     /* nav menu bar responsive start */
-    nav{
+    nav {
         box-shadow: none;
     }
-    .navbar{
+    .navbar {
         flex-direction: column;
         margin-top: 10px;
         gap: 10px;
-        
     }
-    nav  ul {
-       flex-direction: column;
-       text-align: center;
-       gap: 30px;
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
-     /* nav menu bar responsive end */
-    
+    /* nav menu bar responsive end */
+
+    /* banner responsive start */
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-content {
+        background-position: center bottom;
+        background-size: 400px 280px;
+    }
+    /*  banner responsive end */
 }
 
+
+
 /* ========================= */
+
 /* Tablet devices responsive */
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
-     /* nav menu bar responsive start */
-    nav{
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    /* nav menu bar responsive start */
+    nav {
         box-shadow: none;
     }
-    .navbar{
+    .navbar {
         flex-direction: column;
         margin-top: 10px;
         gap: 10px;
-        
     }
-    nav  ul {
-       flex-direction: column;
-       text-align: center;
-       gap: 30px;
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
-     /* nav menu bar responsive end */
+    /* nav menu bar responsive end */
+
+    /* banner responsive start */
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-content {
+        background-position: center bottom;
+        background-size: 800px 280px;
+    }
+    /* banner responsive end */
+   
 }
