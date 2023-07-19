@@ -113,7 +113,7 @@ nav li a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner-title h2{
+.banner-title h2 {
     font-size: 2rem;
 }
 .banner-title p {
@@ -123,9 +123,91 @@ nav li a {
 
 /*  banner style end */
 
+/*  online video style start  */
+.online-content {
+    width: 80%;
+    margin: auto;
+}
+.online-title {
+    text-align: center;
+    padding: 30px 0;
+}
+.online-title h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+.four-img {
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+}
 
+.four-img img {
+    width: 250px;
+}
+.four-img-p {
+    margin-top: 10px;
+    width: 220px;
+}
+.online-h1 {
+    background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+/* ---- images hover style start---- */
+.container {
+    position: relative;
+    width: 245px;
+}
 
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    border: 3px solid #f948b2;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 289px;
+    width: 245px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #00000096;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.watch-now{
+    color: #f948b2;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ---- images hover style end---- */
+
+/*  online video style end  */
 
 /* ========================= */
 
@@ -149,7 +231,7 @@ nav li a {
     /* nav menu bar responsive end */
 
     /* banner responsive start */
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         gap: 20px;
     }
@@ -158,9 +240,25 @@ nav li a {
         background-size: 400px 280px;
     }
     /*  banner responsive end */
+
+    /* online section style start */
+    .four-img {
+       flex-direction: column;
+       gap: 20px;
+    }
+    .online-title h1 {
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    .four-img {
+        width: 76%;
+        margin: auto;
+    }
+    .online-title p{
+        padding: 0 5px;
+    }
+    /* online section style end */
 }
-
-
 
 /* ========================= */
 
@@ -184,7 +282,7 @@ nav li a {
     /* nav menu bar responsive end */
 
     /* banner responsive start */
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         gap: 20px;
     }
@@ -192,6 +290,25 @@ nav li a {
         background-position: center bottom;
         background-size: 800px 280px;
     }
+
     /* banner responsive end */
-   
+
+    /* online section style start */
+    .four-img {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+     }
+     .online-title h1 {
+         font-size: 1.4rem;
+         font-weight: 800;
+     }
+     .four-img {
+         width: 76%;
+         margin: auto;
+     }
+     .online-title p{
+         padding: 0 5px;
+     }
+     /* online section style end */
 }
