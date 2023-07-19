@@ -269,10 +269,9 @@ nav li a {
     align-items: center;
     border: 1px solid #ffffff00;
     border-radius: 20px;
-    color: #0B0223;;
+    color: #0b0223;
     font-weight: 600;
     font-size: 1rem;
-
 }
 .game-icon img {
     width: 50px;
@@ -289,6 +288,70 @@ nav li a {
 }
 
 /* game style start end */
+
+/* footer style start */
+.f-section {
+    margin-top: 60px;
+    background-color: #0b0223;
+}
+.f-content {
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+}
+.f-logo {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.f-h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+.f-g {
+    color: #f948b2;
+}
+.about-item {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.about-item p {
+    font-size: 1rem;
+    color: white;
+}
+.f-icon {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+.f-icon a {
+    gap: 220px;
+}
+.f-icon .fa-brands {
+    margin-right: 20px;
+}
+.f-policy {
+    display: flex;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    gap: 20px;
+}
+.cope-right {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* footer style end */
+
 /* ========================= */
 
 /* Mobile devices responsive */
@@ -373,14 +436,37 @@ nav li a {
         margin-bottom: 50px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
     }
     .game-icon {
         font-weight: 600;
         font-size: 0.7rem;
-    
     }
     /* game style end */
+
+    /* footer start */
+    .about-item {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 10px;
+    }
+    .f-policy {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.6);
+        gap: 20px;
+    }
+    .cope-right {
+        width: 35%;
+        margin: auto;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    /* footer end */
 }
 
 /* ========================= */
@@ -469,12 +555,11 @@ nav li a {
         margin-bottom: 50px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
     }
     .game-icon {
         font-weight: 600;
         font-size: 0.7rem;
-    
     }
     /* game style end */
+    
 }
